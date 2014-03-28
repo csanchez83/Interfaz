@@ -1,0 +1,449 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.2.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.2.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+        <script src="js/actions.js"></script>
+        
+        
+        
+
+
+
+
+        
+	</head>
+	
+	<body>
+	
+        
+        
+		<div data-role="page" id="pageone">
+			
+        <div data-role="header" >
+            
+            <div align=center>
+              <img src="imagenes/INSTITUCIONAL.JPG" >
+				
+            </div>
+            </div>
+			
+			<div data-role="main" >
+                
+                
+                
+                
+                    
+               <h3 class="ui-bar ui-bar-a ui-corner-all" style="text-align:center">Bienvenido</h3>
+      <div class="ui-body ui-body-a ui-corner-all" style="font-size:14px">
+          <p>En esta Aplicación podrás llevar el control de consumo de combustible de una Flotilla Vehicular, así como programar Mantenimientos Preventivos y Correctivos.</p>
+      </div>
+                
+                <br>
+                
+                <div>
+                    
+                    
+<input type="search" name="password" id="search" value="" placeholder="Buscar...">
+<p></p>
+                    <ul data-role="listview" data-inset="true">
+                        <li><a href="#cargarDiesel">Registrar Diesel</a></li>
+                        <li><a href="#reportes">Reportes</a></li>
+                        <li><a href="#mantenimientos">Mantenimientos</a></li>
+    
+                    </ul>
+                    
+                    
+                </div>
+                <br><br>
+                
+                
+				
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				
+                <div data-role="navbar" style="background-color:black">
+                
+                    <ul>
+                    
+                        <li><a href="#cargarDiesel" class="ui-btn ui-btn-active">Cargar Diesel</a></li>
+                        <li><a href="#reportes" class="ui-btn ui-btn-active">Reportes</a></li>
+                        <li><a href="#mantenimientos" class="ui-btn ui-btn-active">Mantenimientos</a></li>
+                    </ul>
+                </div>
+				
+			</div>
+			
+		</div>
+		
+        
+        <div data-role="page" id="cargarDiesel" style="background-color:gray;">
+            <div data-role="header" style="background-color:black; color:white">
+                
+                
+                <h1 class="ui-title" role="heading" aria-level="1" style="text-shadow:none">Registro Diesel</h1>
+                <a href="#pageone" class="ui-btn-left ui-btn-b ui-btn ui-icon-back ui-btn-icon-left ui-corner-all" data-role="button" role="button" style="background-color:black; color:white;" >Back</a>
+                
+            
+            </div>
+            
+            <div data-role="main" style="background-color:gray; color:black" class="ui-content">
+                
+                
+        
+            <form>
+            
+                <div class="ui-field-contain">
+    
+                    <!-- Vehiculo -->
+                    
+                   <div class="ui-field-contain">
+    
+    <select name="select-native-4" id="select-native-4">
+        <option>Elige un Vehículo...</option>
+        <optgroup label="Camiones">
+            <option value="1">Tractor International</option>
+            <option value="2">VW 24-280</option>
+            <option value="3">The 3rd Option</option>
+            <option value="4">The 4th Option</option>
+        </optgroup>
+        <optgroup label="Coches">
+            <option value="5">The 5th Option</option>
+            <option value="6">The 6th Option</option>
+            <option value="7">The 7th Option</option>
+        </optgroup>
+    </select>
+</div>
+                    
+                    <br>
+                    <label for="textinput-fc" style="text-shadow:none">Fecha de Carga:</label>
+                   
+<input name="mydate" id="mydate" type="date" data-role="datebox"
+   data-options='{"mode": "calbox"}'>
+                    <br>
+                    
+                    <!-- kilometraje -->
+                    <label for="textinput-fc" style="text-shadow:none">Kilometraje:</label>
+    <input type="text" name="textinput-fc" id="textinput-fc" placeholder="Kilometraje" value="">
+                    
+                    <br>
+                    <!-- Litros Diesel-->
+                   
+                    <label for="textinput-fc" style="text-shadow:none">Litros de Diesel:</label>
+    <input type="text" name="textinput-fc" id="textinput-fc" placeholder="Litros de Diesel" value="">
+                    
+                    <br>
+                    
+                    <!-- Importe Neto-->
+                   
+                    <label for="textinput-fc" style="text-shadow:none">Importe Neto:</label>
+    <input type="text" name="textinput-fc" id="textinput-fc" placeholder="Importe Neto" value="">
+                    
+                    <br>
+                    
+                    <!-- Guardar -->
+                    
+                    <a href="#" class="ui-btn">Guardar</a>
+                    
+                    
+</div>
+                
+            </form>
+            
+                 </div>
+            <div data-role="footer" data-position="fixed" style="background-color:gray">
+            
+                <div data-role="navbar" >
+                
+                    <ul>
+                    
+                        <li><a href="#pageone" class="ui-btn ui-btn-active" data-theme="a">Inicio</a></li>
+                        <li><a href="#" class="ui-btn ui-btn-active">Mantenimientos</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        
+        </div>
+        
+        <!-- Mantenimientos -->
+        
+        <div data-role="page" id="mantenimientos" style="background-color:white;">
+            <div data-role="header" style="background-color:black; color:white">
+                
+                
+                <h1 class="ui-title" role="heading" aria-level="1" style="text-shadow:none">Mantenimiento</h1>
+                <a href="#pageone" class="ui-btn-left ui-btn-b ui-btn ui-icon-back ui-btn-icon-left ui-corner-all" data-role="button" role="button" style="background-color:black; color:white;" >Back</a>
+                
+            
+            </div>
+            
+            <div data-role="main" style="background-color:gray; color:black" class="ui-content">
+                
+                
+        
+            <form>
+            
+                <div class="ui-field-contain">
+    
+                    <!-- Vehiculo -->
+                    
+                   <div class="ui-field-contain">
+    
+    <select name="select-native-4" id="select-native-4">
+        <option>Elige un Vehículo...</option>
+        <optgroup label="Camiones">
+            <option value="1">Tractor International</option>
+            <option value="2">VW 24-280</option>
+            <option value="3">The 3rd Option</option>
+            <option value="4">The 4th Option</option>
+        </optgroup>
+        <optgroup label="Coches">
+            <option value="5">The 5th Option</option>
+            <option value="6">The 6th Option</option>
+            <option value="7">The 7th Option</option>
+        </optgroup>
+    </select>
+</div>
+                    
+                    <br>
+                    <label for="textinput-fc" style="text-shadow:none">Fecha de Mantenimiento:</label>
+                   
+<input name="mydate" id="mydate" type="date" data-role="datebox"
+   data-options='{"mode": "calbox"}'>
+                    <br>
+                    
+                    <!-- kilometraje -->
+                    <label for="textinput-fc" style="text-shadow:none">Kilometraje:</label>
+    <input type="text" name="textinput-fc" id="textinput-fc" placeholder="Kilometraje" value="">
+                    
+                    <br>
+                    <!-- Tipo de Mantenimiento-->
+                   
+                    <div class="ui-field-contain">
+    
+    <select name="select-native-4" id="select-native-4">
+        <option>Tipo de Mantenimiento...</option>
+        
+            <option value="1">Servicio Mayor</option>
+            <option value="2">Servicio Menor</option>
+            <option value="3">Afinación</option>
+            <option value="4">Cirujía</option>
+        
+        
+    </select>
+</div>
+                    
+                    <br>
+                    
+                    <!-- Observaciones-->
+                   
+                    <label for="textinput-fc" style="text-shadow:none">Observaciones:</label>
+    <textarea type="text" name="textinput-fc" id="textinput-fc" placeholder="Observaciones" value=""></textarea>
+                    
+                    <br>
+                    
+                    <!-- Guardar -->
+                    
+                    <a href="#" class="ui-btn">Guardar</a>
+                    
+                    
+</div>
+                
+            </form>
+            
+                 </div>
+            <div data-role="footer" data-position="fixed" style="background-color:gray">
+            
+                <div data-role="navbar" >
+                
+                    <ul>
+                    
+                        <li><a href="#pageone" class="ui-btn ui-btn-active" data-theme="a">Inicio</a></li>
+                        <li><a href="#cargarDiesel" class="ui-btn ui-btn-active">Cargar Diesel</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        
+        </div>
+        
+        <!-- Fin Mantenimientos -->
+        
+        
+        <!-- Inicio Reportes -->
+        
+        <div data-role="page" id="reportes" data-title="Inbox" data-url="demo-page">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>Reportes</h1>
+        <a href="#demo-intro" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+        <a href="#" onclick="window.location.reload()" data-icon="back" data-iconpos="notext">Refresh</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="gear">
+            <li>
+                <a href="#">
+                    <h3>Tractor International</h3>
+                    <p class="topic"><strong>Carga de Diesel</strong></p>
+                    <p>Fecha: 23-Mar-2014 </p>
+                    <p class="ui-li-aside"><strong>8:18</strong>AM</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Volkswagen 8-150</h3>
+                    <p class="topic"><strong>Mantenimiento Preventivo</strong></p>
+                    <p>Fecha: 23-Mar-2014 </p>
+                    <p class="ui-li-aside"><strong>7:56</strong>AM</p>
+                </a>
+                <a href="#" class="grid">Grid</a>
+            </li>
+            
+        </ul>
+    </div><!-- /content -->
+    <div id="confirm" class="ui-content" data-role="popup" data-theme="a">
+        <p id="question">Are you sure you want to delete:</p>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Yes</a>
+            </div>
+            <div class="ui-block-b">
+                <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancel</a>
+            </div>
+        </div>
+    </div><!-- /popup -->
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Fin Reportes -->
+        
+        <div data-role="page" id="bookings" style="background-color:gray">
+            
+            <div data-role="header" style="background-color:black; color:white">
+            
+                 <a href="#" class="ui-btn-right ui-btn-b ui-btn ui-icon-gear ui-btn-icon-left ui-corner-all" data-role="button" role="button" style="background-color:black; color:white;" >Demo</a>
+                
+                <h1 class="ui-title" role="heading" aria-level="1" style="text-shadow:none">Easy Court</h1>
+                <a href="#pageone" class="ui-btn-left ui-btn-b ui-btn ui-icon-back ui-btn-icon-left ui-corner-all" data-role="button" role="button" style="background-color:black; color:white;" >Back</a>
+            </div>
+            
+            <div data-role="main" style="text-shadow: none">
+                
+                <p>Last Update Dec 16</p>
+                
+                
+                <div style=text-align:center>
+                    <a href="#" data-role=button style="background-color:blue; color:white; text-shadow:none; border:none; width:70%; " class="ui-shadow ui-btn-up-c" data-inline=true data-position=center>Refresh</a>
+               </div>
+                
+                <div>
+                    <br>
+                    <h3>Your last 10 bookings</h3>
+                    
+                    <ul data-role=listview style="font-size:13px">
+                        <li>
+                            <div class="ui-grid-a">
+    <div class="ui-block-a" style="width:80%">Esposito<br>Dec, 12 2014</div>
+    <div class="ui-block-b" style="width:20%">Court No. <br>1</div>
+</div><!-- /grid-a -->
+                        
+                        </li>
+                        
+                        <li>
+                            <div class="ui-grid-a">
+    <div class="ui-block-a" style="width:80%">Dino<br>Dec, 12 2014</div>
+    <div class="ui-block-b" style="width:20%">Court No. <br>2</div>
+</div><!-- /grid-a -->
+                        
+                        </li>
+                        
+                    </ul>    
+                    
+                    
+                    <ul>
+                        
+                    
+                        <li>
+                            <div class="ui-grid-a">
+                                <div class="ui-block-a" style="width:80%">
+                                    w/Esposito<br>16-Dec, 12:00
+                                </div>
+                                <div class="ui-block-b" style="width:20%">
+                                    Court No. 1
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="ui-grid-a">
+                                <div class="ui-block-a" style="width:80%">
+                                    w/Esposito<br>14-Dec, 11:30
+                                </div>
+                                <div class="ui-block-b" style="width:20%">
+                                    Court No. 4
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="ui-grid-a">
+                                <div class="ui-block-a" style="width:80%">
+                                    w/Esposito<br>11-Dec, 9:20
+                                </div>
+                                <div class="ui-block-b" style="width:20%">
+                                    Court No. 2
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="ui-grid-a">
+                                <div class="ui-block-a" style="width:80%">
+                                    w/Esposito/Fuller/Davolio<br>30-Nov, 17:10
+                                </div>
+                                <div class="ui-block-b" style="width:20%">
+                                    Court No. 1
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                    
+            </div>
+        
+            <div data-role="footer" data-position="fixed">
+            
+                <div data-role="navbar" >
+                
+                    <ul>
+                    
+                        <li><a href="#" class="ui-btn ui-btn-active" data-theme="a">Full Site</a></li>
+                        <li><a href="#balance" class="ui-btn ui-btn-active">Balance</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+	
+	</body>
+	
+</html>		
